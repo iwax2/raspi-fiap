@@ -108,7 +108,7 @@ http://iot.info.nara-k.ac.jp:3000/ で作成したポイントIDを設定する�
     1. グラフに用いるすべての縦軸を設定する
 1. ポイントにNewで作成
     1. ポイント表示名にはグラフへの表示／非表示を切り替えるボタンに記入する文字列を記入
-    1. ポイントIDにはアップロードに用いたID (http://tomato.fukuoka.lab/bme280/temperature)などを記入
+    1. ポイントIDにはアップロードに用いたID ( http://tomato.fukuoka.lab/bme280/temperature ) などを記入
     1. 適切なグラフ軸を選択
     1. ステータスをenabledに変更
 
