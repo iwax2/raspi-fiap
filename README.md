@@ -1,6 +1,16 @@
 raspi-fiap
 ==
 
+## 必要なもの
++ Raspberry Zero WH https://www.switch-science.com/catalog/3646/
++ microSDカード（32GBまで） https://www.dospara.co.jp/5shopping/detail_parts.php?bg=7&br=219&sbr=1043&ic=369719&lf=0
++ AE-BME280 (J3をハンダでジャンパする) http://akizukidenshi.com/catalog/g/gK-09421/
++ AE-FT231X http://akizukidenshi.com/catalog/g/gK-06894/
++ microUSBケーブル（2本）
++ DoiBoard
++ 細ピンヘッダ http://akizukidenshi.com/catalog/g/gC-10073/
++ 2列ピンヘッダ http://akizukidenshi.com/catalog/g/gC-00085/
+
 ## Raspbianのダウンロード
 http://ftp.jaist.ac.jp/pub/raspberrypi/raspbian_lite/images/
 から最新のliteイメージをダウンロード（2019/10/3現在最新2019-09-26-raspbian-buster-lite.zip）
