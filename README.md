@@ -21,6 +21,7 @@ USBシリアルモジュールのTX、RX、GNDを写真のようにpi0wと接続
 doiboardとFT231Xを接続する場合は自動で接続されます。
 
 ![シリアル接続](https://github.com/iwax2/raspi-fiap/blob/master/pi0w-serial.jpg "pi0w-serial")
+![DOIBOARDのサンプル](https://github.com/iwax2/raspi-fiap/blob/master/doiboard-sample.jpg "doiboard-sample")
 
 TeraTermなどでシリアル接続、シリアル設定のうちボーレートを115200に設定する。
 
