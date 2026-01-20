@@ -82,14 +82,14 @@ pi@raspberrypi:~$ i2cdetect -y 1
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- 76 --
-pi@raspberrypi:~$ sudo pip3 install RPi.bme280
-pi@raspberrypi:~$ sudo pip3 install "git+https://github.com/PlantFactory/pyfiap"
-pi@raspberrypi:~$ git clone https://github.com/iwax2/raspi-fiap
-pi@raspberrypi:~$ cd raspi-fiap
-pi@raspberrypi:~$ vi bme280test.py
+iwalab@pi0w:~$ git clone https://github.com/iwax2/raspi-fiap
+iwalab@pi0w:~$ cd raspi-fiap
+iwalab@pi0w:~/raspi-fiap$ python3 -m venv venv
+(venv) iwalab@pi0w:~/raspi-fiap$ pip install "git+https://github.com/PlantFactory/pyfiap"
+(venv) iwalab@pi0w:~/raspi-fiap$ vi bme280test.py
 > ポイントIDを適宜変更する
-pi@raspberrypi:~$ python3 bme280test.py
-pi@raspberrypi:~/raspi-fiap$ crontab -e
+(venv) iwalab@pi0w:~/raspi-fiap$ python bme280test.py
+(venv) iwalab@pi0w:~/raspi-fiap$ crontab -e
 no crontab for pi - using an empty one
 
 Select an editor.  To change later, run 'select-editor'.
@@ -100,7 +100,8 @@ Select an editor.  To change later, run 'select-editor'.
 Choose 1-3 [1]: 2
 > 最終行に追記（毎分アップロード）
 # m h  dom mon dow   command
-* * * * * python3 /home/pi/raspi-fiap/bme280test.py
+* * * * * /home/iwalab/raspi-fiap/venv/bin/python /home/iwalab/raspi-fiap/bme280test.py
+(venv) iwalab@pi0w:~/raspi-fiap$ deactivate
 ~~~
 
 https://iot.info.nara-k.ac.jp/viewer/fiapd/ を確認して指定したポイントIDでアップロードされていることを確認する
