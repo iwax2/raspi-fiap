@@ -5,9 +5,8 @@ raspi-fiap
 + Raspberry Zero WH https://www.switch-science.com/catalog/3646/
 + microSDカード（32GBまで） https://www.dospara.co.jp/5shopping/detail_parts.php?bg=7&br=219&sbr=1043&ic=369719&lf=0
 + AE-BME280 (J3をハンダでジャンパする) http://akizukidenshi.com/catalog/g/gK-09421/
-+ AE-FT231X http://akizukidenshi.com/catalog/g/gK-06894/
++ FT234X https://akizukidenshi.com/catalog/g/g108461/
 + microUSBケーブル（2本）
-+ DoiBoard
 + 細ピンヘッダ http://akizukidenshi.com/catalog/g/gC-10073/
 + 2列ピンヘッダ http://akizukidenshi.com/catalog/g/gC-00085/
 
@@ -20,11 +19,13 @@ https://www.raspberrypi.com/software/operating-systems/
 
 ## シリアルコンソールの有効化
 書き込んだbootドライブのconfig.txtの最終行に追記
+
 `dtoverlay=pi3-miniuart-bt`
 
 https://www.usagi1975.com/201907061439/
 
 最近のOSだとブートログが表示されないので cmdline.txt を修正（rootwaitより後を削除）
+
 `console=serial0,115200 console=tty1 root=PARTUUID=3e4061c5-02 rootfstype=ext4 fsck.repair=yes rootwait`
 
 https://linux.joho.info/raspberry-pi/raspberrypi3-serial-enable/
